@@ -1,0 +1,81 @@
+{
+    "name": "cpp-projects",
+    "displayName":"C++ Projects",
+    "description": "Extension for C++ Projects.",
+    "version": "0.1.0",
+    "publisher": "daniel-jeong",
+	"preview": true,
+	"icon": "icon.png",
+	"readme": "README.md",
+    "engines": {
+        "vscode": "^1.28.2"
+    },
+    "keywords": [
+        "C++"
+    ],
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:cpp_projects.newProject"
+    ],
+    "main": "./extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "cpp_projects.newProject",
+                "title": "C++ Projects: Create a New C++ Project"
+            }
+        ],
+        "configuration":[
+            {
+                "type": "object",
+                "title": "C++ Projects",
+                "properties": {
+                    "cpp_projects.msvc_path": {
+                        "type": "string",
+                        "default": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\VC\\Auxiliary\\Build\\vcvarsall.bat",
+                        "description": "Path to the MSVC build tools (vcvarsall.bat)."
+                    },
+                    "cpp_projects.make_path": {
+                        "type": "string",
+                        "default": "make",
+                        "description": "Path to Make."
+                    },
+                    "cpp_projects.gcc32_path": {
+                        "type": "string",
+                        "default": "",
+                        "description": "Path to the 32-bit GNU Compiler Collection directory (bin)."
+                    },
+                    "cpp_projects.gcc64_path": {
+                        "type": "string",
+                        "default": "",
+                        "description": "Path to the 64-bit GNU Compiler Collection directory (bin)."
+                    },
+                    "cpp_projects.gdb_path":
+                    {
+                        "type": "string",
+                        "default": "/usr/bin/gdb",
+                        "description": "Path to the GNU Project Debugger."
+                    }
+                }
+            }
+        ]
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.21",
+        "eslint": "^4.11.0",
+        "@types/node": "^8.10.25"
+    },
+    "extensionDependencies": [
+        "ms-vscode.cpptools"
+    ],
+    "__metadata": {
+        "publisherDisplayName": "Daniel Jeong"
+    }
+}

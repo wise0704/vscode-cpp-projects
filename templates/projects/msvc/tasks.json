@@ -1,0 +1,89 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build C++ | Debug x86 (MSVC)",
+            "type": "shell",
+            "group": "build",
+            "command": ".\\build.bat",
+            "args":[
+                "Debug",
+                "x86"
+            ]
+        },
+        {
+            "label": "Build C++ | Debug x64 (MSVC)",
+            "type": "shell",
+            "group": "build",
+            "command": ".\\build.bat",
+            "args": [
+                "Debug",
+                "x64"
+            ]
+        },
+        {
+            "label": "Build C++ | Release x86 (MSVC)",
+            "type": "shell",
+            "group": "build",
+            "command": ".\\build.bat",
+            "args": [
+                "Release",
+                "x86"
+            ]
+        },
+        {
+            "label": "Build C++ | Release x64 (MSVC)",
+            "type": "shell",
+            "group": "build",
+            "command": ".\\build.bat",
+            "args": [
+                "Release",
+                "x64"
+            ]
+        },
+        {
+            "label": "Build & Run C++ | Debug x86 (MSVC)",
+            "type": "shell",
+            "group": "test",
+            "command": ".\\build.bat",
+            "args": [
+                "Debug",
+                "x86",
+                "run"
+            ]
+        },
+        {
+            "label": "Build & Run C++ | Debug x64 (MSVC)",
+            "type": "shell",
+            "group": "test",
+            "command": ".\\build.bat",
+            "args": [
+                "Debug",
+                "x64",
+                "run"
+            ]
+        },
+        {
+            "label": "Build & Run C++ | Release x86 (MSVC)",
+            "type": "shell",
+            "group": "test",
+            "command": ".\\build.bat",
+            "args": [
+                "Release",
+                "x86",
+                "run"
+            ]
+        },
+        {
+            "label": "Build & Run C++ | Release x64 (MSVC)",
+            "type": "shell",
+            "group": "test",
+            "command": ".\\build.bat",
+            "args": [
+                "Release",
+                "x64",
+                "run"
+            ]
+        }
+    ]
+}

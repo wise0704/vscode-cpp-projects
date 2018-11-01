@@ -1,0 +1,89 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build C++ | Debug x86 (G++)",
+            "type": "shell",
+            "group": "build",
+            "command": "<make:\\,\\>",
+            "args": [
+                "BUILD=Debug",
+                "TARGET=x86"
+            ]
+        },
+        {
+            "label": "Build C++ | Debug x64 (G++)",
+            "type": "shell",
+            "group": "build",
+            "command": "<make:\\,\\>",
+            "args": [
+                "BUILD=Debug",
+                "TARGET=x64"
+            ]
+        },
+        {
+            "label": "Build C++ | Release x86 (G++)",
+            "type": "shell",
+            "group": "build",
+            "command": "<make:\\,\\>",
+            "args": [
+                "BUILD=Release",
+                "TARGET=x86"
+            ]
+        },
+        {
+            "label": "Build C++ | Release x64 (G++)",
+            "type": "shell",
+            "group": "build",
+            "command": "<make:\\,\\>",
+            "args": [
+                "BUILD=Release",
+                "TARGET=x64"
+            ]
+        },
+        {
+            "label": "Build & Run C++ | Debug x86 (G++)",
+            "type": "shell",
+            "group": "test",
+            "command": "<make:\\,\\>",
+            "args": [
+                "BUILD=Debug",
+                "TARGET=x86",
+                "run"
+            ]
+        },
+        {
+            "label": "Build & Run C++ | Debug x64 (G++)",
+            "type": "shell",
+            "group": "test",
+            "command": "<make:\\,\\>",
+            "args": [
+                "BUILD=Debug",
+                "TARGET=x64",
+                "run"
+            ]
+        },
+        {
+            "label": "Build & Run C++ | Release x86 (G++)",
+            "type": "shell",
+            "group": "test",
+            "command": "<make:\\,\\>",
+            "args": [
+                "BUILD=Release",
+                "TARGET=x86",
+                "run"
+            ]
+        },
+        {
+            "label": "Build & Run C++ | Release x64 (G++)",
+            "type": "shell",
+            "group": "test",
+            "command": "<make:\\,\\>",
+            "args": [
+                "BUILD=Release",
+                "TARGET=x64",
+                "run"
+            ]
+        }
+    ]
+}

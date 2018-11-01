@@ -1,0 +1,53 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug C++ | Debug x86 (MSVC)",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/bin/Debug/x86/<name:[\\/:*?\"<>|],_>.exe",
+            "preLaunchTask": "Build C++ | Debug x86 (MSVC)",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+        },
+        {
+            "name": "Debug C++ | Debug x64 (MSVC)",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/bin/Debug/x64/<name:[\\/:*?\"<>|],_>.exe",
+            "preLaunchTask": "Build C++ | Debug x64 (MSVC)",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true
+        },
+        {
+            "name": "Debug C++ | Release x86 (MSVC)",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/bin/Release/x86/<name:[\\/:*?\"<>|],_>.exe",
+            "preLaunchTask": "Build C++ | Release x86 (MSVC)",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+        },
+        {
+            "name": "Debug C++ | Release x64 (MSVC)",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/bin/Release/x64/<name:[\\/:*?\"<>|],_>.exe",
+            "preLaunchTask": "Build C++ | Release x64 (MSVC)",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true
+        }
+    ]
+}

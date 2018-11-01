@@ -1,0 +1,89 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug C++ | Debug x86 (GDB)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/bin/Debug/x86/<name:[\\/:*?\"<>|],_>",
+            "preLaunchTask": "Build C++ | Debug x86 (G++)",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "miDebuggerPath": "<gdb:\\,\\>",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "Debug C++ | Debug x64 (GDB)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/bin/Debug/x64/<name:[\\/:*?\"<>|],_>",
+            "preLaunchTask": "Build C++ | Debug x64 (G++)",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "miDebuggerPath": "<gdb:\\,\\>",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "Debug C++ | Release x86 (GDB)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/bin/Release/x86/<name:[\\/:*?\"<>|],_>",
+            "preLaunchTask": "Build C++ | Release x86 (G++)",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "miDebuggerPath": "<gdb:\\,\\>",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "Debug C++ | Release x64 (GDB)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/bin/Release/x64/<name:[\\/:*?\"<>|],_>",
+            "preLaunchTask": "Build C++ | Release x64 (G++)",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "miDebuggerPath": "<gdb:\\,\\>",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,103 @@
+{
+    "[MSVC] Windows": {
+        "arguments": {
+            "msvc": {
+                "type": "setting",
+                "key": "msvc_path"
+            },
+            "name": {
+                "type": "inputBox",
+                "default": "main",
+                "options": {
+                    "prompt": "Enter the project name.",
+                    "value": "main",
+                    "ignoreFocusOut": true
+                }
+            },
+            "standard": {
+                "type": "quickPick",
+                "default": "c++latest",
+                "options": {
+                    "placeHolder": "Choose the C++ standard to use.",
+                    "ignoreFocusOut": true
+                },
+                "items": [
+                    "c++latest",
+                    "c++17",
+                    "c++14"
+                ]
+            }
+        },
+        "directories": [
+            ".vscode",
+            "bin",
+            "include",
+            "lib",
+            "obj",
+            "src"
+        ],
+        "files": {
+            "msvc/build.bat": "build.bat",
+            "msvc/tasks.json": ".vscode/tasks.json",
+            "msvc/launch.json": ".vscode/launch.json",
+            "src/main.cpp": "src/<name:[\\/:*?\"<>|],_>.cpp"
+        }
+    },
+    "[G++/GDB] Linux": {
+        "arguments": {
+            "make": {
+                "type": "setting",
+                "key": "make_path"
+            },
+            "gcc32": {
+                "type": "setting",
+                "key": "gcc32_path"
+            },
+            "gcc64": {
+                "type": "setting",
+                "key": "gcc64_path"
+            },
+            "gdb": {
+                "type": "setting",
+                "key": "gdb_path"
+            },
+            "name": {
+                "type": "inputBox",
+                "default": "main",
+                "options": {
+                    "prompt": "Enter the project name.",
+                    "value": "main",
+                    "ignoreFocusOut": true
+                }
+            },
+            "standard": {
+                "type": "quickPick",
+                "default": "c++17",
+                "options": {
+                    "placeHolder": "Choose the C++ standard to use.",
+                    "ignoreFocusOut": true
+                },
+                "items": [
+                    "c++2a",
+                    "c++17",
+                    "c++14",
+                    "c++11",
+                    "c++98"
+                ]
+            }
+        },
+        "directories": [
+            ".vscode",
+            "bin",
+            "include",
+            "lib",
+            "src"
+        ],
+        "files": {
+            "gcc/Makefile": "Makefile",
+            "gcc/tasks.json": ".vscode/tasks.json",
+            "gcc/launch.json": ".vscode/launch.json",
+            "src/main.cpp": "src/<name:[\\\\/:*?\"<>|],_>.cpp"
+        }
+    }
+}
