@@ -52,11 +52,16 @@
                         "default": "",
                         "description": "Path to the 64-bit GNU Compiler Collection directory (bin)."
                     },
-                    "cpp_projects.gdb_path":
+                    "cpp_projects.gdb32_path":
                     {
                         "type": "string",
                         "default": "/usr/bin/gdb",
-                        "description": "Path to the GNU Project Debugger."
+                        "description": "Path to the 32-bit GNU Project Debugger."
+                    },
+                    "cpp_projects.gdb64_path": {
+                        "type": "string",
+                        "default": "/usr/bin/gdb",
+                        "description": "Path to the 64-bit GNU Project Debugger."
                     }
                 }
             }

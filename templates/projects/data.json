@@ -57,9 +57,13 @@
                 "type": "setting",
                 "key": "gcc64_path"
             },
-            "gdb": {
+            "gdb32": {
                 "type": "setting",
-                "key": "gdb_path"
+                "key": "gdb32_path"
+            },
+            "gdb64": {
+                "type": "setting",
+                "key": "gdb64_path"
             },
             "name": {
                 "type": "inputBox",

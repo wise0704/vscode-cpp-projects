@@ -13,7 +13,7 @@
             "environment": [],
             "externalConsole": true,
             "MIMode": "gdb",
-            "miDebuggerPath": "<gdb:\\,\\>",
+            "miDebuggerPath": "<gdb32:\\,\\>",
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
@@ -34,7 +34,7 @@
             "environment": [],
             "externalConsole": true,
             "MIMode": "gdb",
-            "miDebuggerPath": "<gdb:\\,\\>",
+            "miDebuggerPath": "<gdb64:\\,\\>",
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
@@ -55,7 +55,7 @@
             "environment": [],
             "externalConsole": true,
             "MIMode": "gdb",
-            "miDebuggerPath": "<gdb:\\,\\>",
+            "miDebuggerPath": "<gdb32:\\,\\>",
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
@@ -76,7 +76,7 @@
             "environment": [],
             "externalConsole": true,
             "MIMode": "gdb",
-            "miDebuggerPath": "<gdb:\\,\\>",
+            "miDebuggerPath": "<gdb64:\\,\\>",
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",

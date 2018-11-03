@@ -16,9 +16,10 @@ This preview release of the extension enables an easier setup of C++ projects in
 
 * `cpp_projects.msvc_path`: Path to the MSVC build tools (vcvarsall.bat).
 * `cpp_projects.make_path`: Path to Make.
-* `cpp_projects.gcc32_path`: Path to the 32-bit GNU Compiler Collection directory.
-* `cpp_projects.gcc64_path`: Path to the 64-bit GNU Compiler Collection directory.
-* `cpp_projects.gdb_path`: Path to the GNU Project Debugger.
+* `cpp_projects.gcc32_path`: Path to the 32-bit GNU Compiler Collection directory (bin).
+* `cpp_projects.gcc64_path`: Path to the 64-bit GNU Compiler Collection directory (bin).
+* `cpp_projects.gdb32_path`: Path to the 32-bit GNU Project Debugger.
+* `cpp_projects.gdb32_path`: Path to the 64-bit GNU Project Debugger.
 
 ## Known Issues
 

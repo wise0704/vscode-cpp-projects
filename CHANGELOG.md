@@ -1,9 +1,18 @@
 # Change Log
 All notable changes to the "C++ Projects" extension will be documented in this file.
 
+## [Unreleased]
+> ### Added
+> + Setting: `cpp_projects.gdb32_path` - Path to the 32-bit GNU Project Debugger.
+> + Setting: `cpp_projects.gdb64_path` - Path to the 64-bit GNU Project Debugger.
+> ### Changed
+> * Template: `projects/src/main.cpp` - Added more of common includes.
+> ### Removed
+> - Setting: `cpp_projects.gdb_path` - Use `gdb32_path` or `gdb64_path` instead.
+
 ## [0.1.0] - 2018/11/01 (Initial Preview Release)
 > ### Added
-> + Command: `cpp_projects.newProject` - automatically creates `.vscode/tasks.json` and `.vscode/launch.json` files and other common folders.
+> + Command: `cpp_projects.newProject` - Automatically creates `.vscode/tasks.json` and `.vscode/launch.json` files and other common folders.
 >   + Supports MSVC setup for Windows environment.
 >   + Supports GCC setup for Linux environment, or GCC with MinGW-w64 setup for Windows 
 > + Setting: `cpp_projects.msvc_path` - Path to the MSVC build tools (vcvarsall.bat).
