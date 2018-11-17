@@ -1,7 +1,7 @@
 # Change Log
 All notable changes to the "C++ Projects" extension will be documented in this file.
 
-## [Unreleased]
+## [0.1.1] - 2018/11/18
 > ### Added
 > + Setting: `cpp_projects.gdb32_path` - Path to the 32-bit GNU Project Debugger.
 > + Setting: `cpp_projects.gdb64_path` - Path to the 64-bit GNU Project Debugger.
