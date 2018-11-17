@@ -5,8 +5,6 @@ All notable changes to the "C++ Projects" extension will be documented in this f
 > ### Added
 > + Setting: `cpp_projects.gdb32_path` - Path to the 32-bit GNU Project Debugger.
 > + Setting: `cpp_projects.gdb64_path` - Path to the 64-bit GNU Project Debugger.
-> ### Changed
-> * Template: `projects/src/main.cpp` - Added more of common includes.
 > ### Removed
 > - Setting: `cpp_projects.gdb_path` - Use `gdb32_path` or `gdb64_path` instead.
 
