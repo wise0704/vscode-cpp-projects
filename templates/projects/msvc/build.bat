@@ -1,6 +1,7 @@
 @echo off
 
 rem Configure the output file name.
+rem %1 = Debug/Release, %2 = x86/x64
 set out=<name:[\\/:*?"<>|],_>.exe
 set dir=\%1\%2
 
@@ -12,9 +13,9 @@ if %1 == Debug (
     rem Configure additional options for debug.
     set _CL_=/MDd /Od /Zi
     set _LINK_=/DEBUG:FASTLINK
-) else (
+) else if %1 == Release (
     rem Configure additional options for release.
-    set _CL_=/MD /O2
+    set _CL_=/MD /O2 /DNDEBUG
     set _LINK_=/OPT:REF,ICF,LBR
 )
 

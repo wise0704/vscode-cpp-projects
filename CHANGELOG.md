@@ -1,6 +1,11 @@
 # Change Log
 All notable changes to the "C++ Projects" extension will be documented in this file.
 
+## [Unreleased]
+> ### Changed
+> * Template: `build.bat` - Define conditional macro `NDEBUG` for release.
+> * Template: `Makefile` - Define conditional macro `NDEBUG` for release and `_DEBUG` for debug.
+
 ## [0.1.1] - 2018/11/18
 > ### Added
 > + Setting: `cpp_projects.gdb32_path` - Path to the 32-bit GNU Project Debugger.

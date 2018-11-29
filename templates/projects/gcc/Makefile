@@ -1,4 +1,5 @@
 # Configure the output file name.
+# $(BUILD) = Debug/Release, $(TARGET) = x86/x64
 OUT := <name:[\\/:*?"<>|],_>
 DIR := /$(BUILD)/$(TARGET)
 
@@ -7,16 +8,16 @@ CXXFLAGS := -Wall -Wextra -Iinclude -Llib -std=<standard>
 
 ifeq ($(BUILD),Debug)
 # Configure additional options for debug.
-CXXFLAGS += -ggdb
-else
+CXXFLAGS += -ggdb -D_DEBUG
+else ifeq ($(BUILD),Release)
 # Configure additional options for release.
-CXXFLAGS += -O2
+CXXFLAGS += -O2 -DNDEBUG
 endif
 
 ifeq ($(TARGET),x86)
 CXXPATH := <gcc32>
 CXXFLAGS += -m32
-else
+else ifeq ($(TARGET),x64)
 CXXPATH := <gcc64>
 CXXFLAGS += -m64
 endif
