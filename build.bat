@@ -1,9 +1,18 @@
 @echo off
 
 if "%1" == "install" call :install %*
-if "%1" == "build" call :build %*
-if "%1" == "clean" call :clean %*
+if "%1" == "build" call :build
+if "%1" == "clean" call :clean
 exit /b 0
+
+:install
+echo Installing...
+call :build
+for /d %%i in ("%USERPROFILE%\.vscode\extensions\%2.%3-*") do rmdir /q /s "%%i"
+robocopy /e bin "%USERPROFILE%\.vscode\extensions\%2.%3-%4" 1>nul
+call :clean
+echo Installing Done.
+goto :eof
 
 :build
 echo Building...
@@ -15,15 +24,6 @@ call :copy package.json
 call :copy README.md
 call :copyfolder templates
 echo Building Done.
-goto :eof
-
-:install
-echo Installing...
-call :build
-for /d %%i in ("%USERPROFILE%\.vscode\extensions\%2.%3-*") do rmdir /q /s "%%i"
-robocopy /e bin "%USERPROFILE%\.vscode\extensions\%2.%3-%4" 1>nul
-call :clean
-echo Installing Done.
 goto :eof
 
 :clean
