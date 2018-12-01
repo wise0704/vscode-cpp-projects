@@ -1,7 +1,7 @@
 # Change Log
 All notable changes to the "C++ Projects" extension will be documented in this file.
 
-## [Unreleased]
+## [0.1.2] - 2018/12/01
 > ### Changed
 > * Template: `build.bat` - Define conditional macro `NDEBUG` for release.
 > * Template: `Makefile` - Define conditional macro `NDEBUG` for release and `_DEBUG` for debug.

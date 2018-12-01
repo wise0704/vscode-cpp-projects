@@ -2,7 +2,7 @@
     "name": "cpp-projects",
     "displayName":"C++ Projects",
     "description": "Extension for C++ Projects.",
-    "version": "0.1.0",
+    "version": "0.1.2",
     "publisher": "daniel-jeong",
 	"preview": true,
 	"icon": "icon.png",
