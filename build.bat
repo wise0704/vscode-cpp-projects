@@ -20,7 +20,7 @@ goto :eof
 :install
 echo Installing...
 call :build
-if exist "%USERPROFILE%\.vscode\extensions\%2.%3-%4" rmdir /q /s "%USERPROFILE%\.vscode\extensions\%2.%3-%4"
+for /d %%i in ("%USERPROFILE%\.vscode\extensions\%2.%3-*") do rmdir /q /s "%%i"
 robocopy /e bin "%USERPROFILE%\.vscode\extensions\%2.%3-%4" 1>nul
 call :clean
 echo Installing Done.
