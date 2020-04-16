@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to the "C++ Projects" extension will be documented in this file.
 
+## [0.1.3] - 2020/04/16 (Uploaded on GitHub)
+> ### Changed
+> * Other: `README.md` - Updated links.
+
 ## [0.1.2] - 2018/12/01
 > ### Changed
 > * Template: `build.bat` - Define conditional macro `NDEBUG` for release.
@@ -10,6 +14,7 @@ All notable changes to the "C++ Projects" extension will be documented in this f
 > ### Added
 > + Setting: `cpp_projects.gdb32_path` - Path to the 32-bit GNU Project Debugger.
 > + Setting: `cpp_projects.gdb64_path` - Path to the 64-bit GNU Project Debugger.
+>
 > ### Removed
 > - Setting: `cpp_projects.gdb_path` - Use `gdb32_path` or `gdb64_path` instead.
 
