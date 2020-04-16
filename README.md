@@ -14,17 +14,16 @@ This preview release of the extension enables an easier setup of C++ projects in
 
 ## Extension Settings
 
-* `cpp_projects.msvc_path`: Path to the MSVC build tools (vcvarsall.bat).
-* `cpp_projects.make_path`: Path to Make.
-* `cpp_projects.gcc32_path`: Path to the 32-bit GNU Compiler Collection directory (bin).
-* `cpp_projects.gcc64_path`: Path to the 64-bit GNU Compiler Collection directory (bin).
-* `cpp_projects.gdb32_path`: Path to the 32-bit GNU Project Debugger.
-* `cpp_projects.gdb32_path`: Path to the 64-bit GNU Project Debugger.
+Name | Description
+--- | ---
+`cpp_projects.msvc_path` | Path to the MSVC build tools (vcvarsall.bat).
+`cpp_projects.make_path` | Path to Make.
+`cpp_projects.gcc32_path` | Path to the 32-bit GNU Compiler Collection directory (bin).
+`cpp_projects.gcc64_path` | Path to the 64-bit GNU Compiler Collection directory (bin).
+`cpp_projects.gdb32_path` | Path to the 32-bit GNU Project Debugger.
+`cpp_projects.gdb32_path` | Path to the 64-bit GNU Project Debugger.
 
-## Known Issues
+## External Links
 
-> _None_
-
-## Release Notes
-
-> Refer to [`CHANGELOG.md`](CHANGELOG.md) for release notes.
+* [Known Issues](https://github.com/wise0704/daniel-jeong.cpp-projects/issues)
+* [Release History](https://github.com/wise0704/daniel-jeong.cpp-projects/blob/master/CHANGELOG.md)
